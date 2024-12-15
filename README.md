@@ -21,7 +21,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [solution URL](https://github.com/Mohammed-Abol-Fotouh/Recipe-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://mohammed-abol-fotouh.github.io/Recipe-page/)
 
 ## My process
 
@@ -34,5 +34,5 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ## Author
 
-- Website - [Mohammed Abol Fotouh](https://mohammed-abol-fotouh.github.io/qr-code-components/)
+- Website - [Mohammed Abol Fotouh](https://github.com/Mohammed-Abol-Fotouh/Recipe-page)
 - Frontend Mentor - [@Mohammed-Abol-Fotouh](https://www.frontendmentor.io/profile/Mohammed-Abol-Fotouh)
