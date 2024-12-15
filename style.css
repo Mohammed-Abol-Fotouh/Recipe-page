@@ -1,0 +1,221 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--Stone-100: hsl(30, 54%, 90%);
+	--Stone-150: hsl(30, 18%, 87%);
+	--Stone-600: hsl(30, 10%, 34%);
+	--Stone-900: hsl(24, 5%, 18%);
+	--Brown-800: hsl(14, 45%, 36%);
+	--Rose-800: hsl(332, 51%, 32%);
+	--Rose-50: hsl(330, 100%, 98%);
+
+	--font-size: 1rem;
+	--font-weight-Regular: 400;
+	--font-weight-semiBold: 600;
+	--font-weight-Bold: 700;
+}
+
+@font-face {
+	font-family: "Young Serif";
+	src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+	font-weight: var(--font-weight-Regular);
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Outfit";
+	src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf) format("truetype");
+	font-weight: var(--font-weight-Regular);
+	font-style: normal;
+}
+/* @font-face {
+	font-family: "Outfit";
+	src: url(./assets/fonts/outfit/static/Outfit-SemiBold.ttf) format("truetype");
+	font-weight: var(--font-weight-semiBold);
+	font-style: normal;
+}
+@font-face {
+	font-family: "Outfit";
+	src: url(./assets/fonts/outfit/static/Outfit-Bold.ttf) format("truetype");
+	font-weight: var(--font-weight-Bold);
+	font-style: normal;
+} */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Outfit", sans-serif;
+	line-height: 1.4;
+	color: var(--Stone-600);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.recipe__img {
+	max-width: 100%;
+}
+
+@media (min-width: 43em) {
+	body {
+		background-color: var(--Stone-100);
+		max-width: 50%;
+		margin: 2em auto;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	.recipe {
+		background-color: var(--white);
+		border-radius: 1em;
+	}
+
+	.recipe__img {
+		border-radius: 1em;
+		width: 90%;
+		margin: 2em auto;
+		display: block;
+	}
+}
+
+.recipe__title--heading,
+.recipe__ingredients--heading,
+.recipe__instructions--heading,
+.recipe__nutrition--heading {
+	font-family: "Young Serif", sans-serif;
+}
+
+.recipe__title {
+	margin-block: 3em;
+}
+
+.recipe__title--heading {
+	font-size: 2rem;
+	color: var(--Stone-900);
+	margin-block-end: 0.8em;
+}
+
+.recipe__prep-time {
+	background-color: var(--Stone-100);
+	border-radius: 0.5em;
+	box-shadow: 0 -6px 0 0 var(--Stone-100), 5px -3px 0px 0px var(--Stone-150);
+	padding: 1.5em;
+}
+
+.recipe__prep-time--heading {
+	color: var(--Rose-800);
+	font-size: 1.3rem;
+	margin-block-end: 0.8em;
+}
+
+li {
+	list-style: none;
+	display: flex;
+	padding-inline: 1em;
+	padding-block-end: 1em;
+	align-items: center;
+}
+
+.recipe__prep-time--list-item:first-child {
+	align-items: flex-start;
+}
+
+li:last-child {
+	padding-block-end: 0;
+}
+
+li::before {
+	content: "•";
+	color: var(--Rose-800);
+	display: inline-block;
+	width: 1.2em;
+	font-size: 1.7rem;
+	align-self: center;
+}
+
+.recipe__ingredients,
+.recipe__instructions,
+.recipe__nutrition {
+	padding-block: 2em;
+	border-bottom: 1px solid var(--Stone-150);
+}
+
+.recipe__ingredients--heading,
+.recipe__instructions--heading,
+.recipe__nutrition--heading {
+	color: var(--Brown-800);
+	font-size: 2rem;
+	margin-block-end: 1em;
+}
+
+.recipe__instructions--list {
+	list-style: none;
+	counter-reset: li;
+	padding-inline-start: 1.5em;
+}
+
+.recipe__instructions--list-item::before {
+	content: counter(li) ".";
+	color: var(--Brown-800);
+	display: inline-block;
+	width: 1.2em;
+	font-size: 1.8rem;
+	margin-inline-start: -1em;
+}
+
+.recipe__instructions--list-item {
+	counter-increment: li;
+	display: block;
+}
+
+.recipe__instructions--list-item strong {
+	margin-inline-start: 0;
+}
+
+.recipe__nutrition--table {
+	width: 85%;
+	padding-inline-start: 2em;
+	margin-block-start: 2em;
+	border-collapse: collapse;
+}
+
+tr {
+	height: 3em;
+	border-bottom: 1px solid var(--Stone-150);
+}
+
+tr:last-child,
+.recipe__nutrition {
+	border-bottom: 0;
+}
+
+td {
+	padding-inline-start: 2em;
+}
+
+td:last-child {
+	color: var(--Brown-800);
+	font-weight: bold;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
