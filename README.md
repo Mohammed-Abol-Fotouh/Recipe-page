@@ -15,12 +15,12 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![screenshot of desktop](./assets/images/desktop-screenshot.png.png)
-![screenshot of mobile](./assets/images/mobile-screenshot.png.png)
+![screenshot of desktop](./assets/images/desktop-screenshot.png)
+![screenshot of mobile](./assets/images/mobile-screenshot.png)
 
 ### Links
 
-- Solution URL: [solution URL](https://mohammed-abol-fotouh.github.io/qr-code-components/)
+- Solution URL: [solution URL](https://github.com/Mohammed-Abol-Fotouh/Recipe-page)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
